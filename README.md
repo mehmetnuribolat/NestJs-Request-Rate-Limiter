@@ -1,7 +1,7 @@
 # NestJS-Request-Rate-Limiter
 Sample Request Rate Limiter Application using NestJS, Redis, MongoDB and Sliding Window Algorithm.
 
-![nestjs-mongo](https://github.com/mehmetnuribolat/User-Auth-Service-NestJS/assets/145845943/697c57c4-9e28-4db5-96b8-f5924ee66b02)
+![nestjs-mongo-redis-request-rate-limiter](assets/nestjs-redis-mongo-rate-limiter.png)
 
 ## Features
 - Redis for Caching.
