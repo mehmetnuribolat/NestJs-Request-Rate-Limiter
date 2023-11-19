@@ -1,0 +1,15 @@
+version: '3.9'
+services:
+  redis-cache:
+    image: redis:6.0
+    ports:
+      - 6379:6379
+  mongodb:
+    image: mongo
+    container_name: mongodb
+    restart: always
+    ports:
+      - '27017:27017'
+    # environment:
+    #   MONGO_INITDB_ROOT_USERNAME: test
+    #   MONGO_INITDB_ROOT_PASSWORD: testpass
