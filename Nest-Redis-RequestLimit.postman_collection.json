@@ -1,0 +1,196 @@
+{
+	"info": {
+		"_postman_id": "8a141d2e-f7b2-4bca-92c2-7c02f61af3a1",
+		"name": "Nest-Redis-RequestLimit",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6902997"
+	},
+	"item": [
+		{
+			"name": "Public Request One",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-forwarded-for",
+						"value": "127.0.0.1",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/public/requestOne",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"public",
+						"requestOne"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Public Request Three",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-forwarded-for",
+						"value": "127.0.0.1",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/public/requestTwo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"public",
+						"requestTwo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Public Request Three",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-forwarded-for",
+						"value": "127.0.0.1",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/public/requestThree",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"public",
+						"requestThree"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Private Request One",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-forwarded-for",
+						"value": "127.0.0.1",
+						"type": "text"
+					},
+					{
+						"key": "authorization",
+						"value": "user1@test.com Test123!",
+						"type": "text"
+					},
+					{
+						"key": "x-api-key",
+						"value": "bvdqDf5ApPwGh8-zDD48S9hkyZt7G",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/private/requestOne",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"private",
+						"requestOne"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Private Request Two",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-forwarded-for",
+						"value": "127.0.0.1",
+						"type": "text"
+					},
+					{
+						"key": "authorization",
+						"value": "user1@test.com Test123!",
+						"type": "text"
+					},
+					{
+						"key": "x-api-key",
+						"value": "bvdqDf5ApPwGh8-zDD48S9hkyZt7G",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/private/requestTwo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"private",
+						"requestTwo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Private Request Three",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-forwarded-for",
+						"value": "127.0.0.1",
+						"type": "text"
+					},
+					{
+						"key": "authorization",
+						"value": "user1@test.com Test123!",
+						"type": "text"
+					},
+					{
+						"key": "x-api-key",
+						"value": "bvdqDf5ApPwGh8-zDD48S9hkyZt7G",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/private/requestThree",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"private",
+						"requestThree"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
